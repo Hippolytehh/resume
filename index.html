@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Hippolyte LEPRELLE</title>
+</head>
+
+<body>
+
+    <div class="switch-container">
+        <span class="label-left"">English</span>
+        <label class=" switch">
+            <input type="checkbox" id="language-toggle">
+            <span class="slider round"></span>
+            </label>
+            <span class="label-right">Français</span>
+    </div>
+
+    <div class=" container">
+    </div>
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 8.8pt;
+        }
+
+        html,
+        body {
+            width: 210mm;
+            height: 297mm;
+            animation: fadeIn 1s;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            animation: fadeIn 0.7s;
+        }
+
+        a {
+            color: black;
+        }
+
+        .resume-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .name {
+            font-size: 1.4em;
+        }
+
+        .section-header {
+            border-bottom: 0.8px solid black;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .section-body {
+            margin: 0px 5px;
+        }
+
+        .text-box {
+            text-align: justify;
+        }
+
+        .box-section {
+            display: flex;
+            flex-direction: column;
+            gap: 10px
+        }
+
+        .box-column {
+            width: 160px;
+        }
+
+        .box-column-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap
+        }
+
+        .box-column li {
+            width: 120px;
+        }
+
+        .box-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .box-header .left {
+            font-weight: bold;
+        }
+
+        ul {
+            padding: 0 0 0 0;
+            margin: 0;
+        }
+
+        .box-list {
+            margin-left: 10px;
+        }
+
+        .box-list.long {
+            margin-right: 100px
+        }
+
+        li::marker {
+            font-size: 4pt;
+        }
+
+        .box-list li {
+            margin-left: 5px;
+            text-align: justify;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        /* toogle */
+        .switch-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .switch-container .label-left,
+        .switch-container .label-right {
+            width: 60px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 80px;
+            height: 34px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:hover {
+            background-color: #b8b2b2;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #021728;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #0b3150;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(46px);
+            -ms-transform: translateX(46px);
+            transform: translateX(46px);
+        }
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+        @media print {
+            .switch-container {
+                display: none;
+            }
+        }
+    </style>
+</body>
+
+
+<script>
+
+    const languageCheck = {
+        false: 'fr',
+        true: 'en'
+    }
+
+    const resume = [
+        {
+            section_type: 'resume-details',
+            section_content: [
+                {
+                    name: "Hippolyte LEPRELLE",
+                    details: `<a href="mailto:hippolyte.leprelle@skema.edu">hippolyte.leprelle@skema.edu</a> - +33 7 67 50 64 16 - Paris, France - <a href="linkedin.com/in/hippolyte-leprelle/">linkedin.com/in/hippolyte-leprelle/</a>`,
+                    summary: {
+                        fr: "Disponible à partir de septembre/octobre 2024 pour une expérience de fin d'études en finance à l'étranger.",
+                        en: "Available from September/October 2024 for an end-of-study experience in finance abroad",
+                    },
+                }
+            ],
+        },
+        {
+            section_type: 'text-box',
+            section_name: {
+                fr: "DESCRIPTION",
+                en: "OBJECTIVE",
+            },
+            section_content: [
+                {
+                    fr: "Passionné de finance et de programmation, avec une expérience substantielle dans la banque privée, j'ai perfectionné mes compétences en matière de développement de logiciels et d'analyse de données. Je suis maintenant à la recherche d'une opportunité internationale de troisième cycle qui me permette de combiner mon expertise technique avec une focalisation sur les objectifs commerciaux. Je suis impatient de continuer à apprendre, d'identifier de manière proactive les possibilités d'amélioration et de contribuer activement au succès de l'équipe.",
+                    en: "As a finance and programming enthusiast with substantial experience in private banking, I have honed my skills in software development and data analysis. I am now seeking an international post-graduate opportunity that allows me to blend my technical expertise with a focus on business objectives. I am eager to continue learning, proactively identify opportunities for improvement, and contribute actively to the team’s success."
+                }
+            ]
+        },
+        {
+            section_type: 'box-section',
+            section_name: {
+                fr: "EXPERIENCE",
+                en: "EXPERIENCE",
+            },
+            section_content: [
+                [
+                    {
+                        type: 'header',
+                        left: {
+                            en: "Front & Middle Office Technology, internship",
+                            fr: "Front & Middle Office Technology, stage",
+                        },
+                        right: {
+                            en: "6 months, 10/2024 - present",
+                            fr: "6 mois, 10/2024 - aujourd'hui"
+                        }
+                    },
+                    {
+                        type: 'header',
+                        left: {
+                            en: "Jukoï Capital",
+                            fr: "Jukoï Capital"
+                        },
+                        right: {
+                            en: "Monaco",
+                            fr: "Monaco"
+                        }
+                    }
+                ],
+                [
+                    {
+                        type: 'header',
+                        left: {
+                            en: "Business Analyst / Software Developer, apprenticeship",
+                            fr: "Business Analayst / Développeur, apprentissage"
+                        },
+                        right: {
+                            en: "1 year, 09/2023 - 09/2024",
+                            fr: "1 an, 09/2023 - 09/2024",
+                        }
+                    },
+                    {
+                        type: 'header',
+                        left: {
+                            en: "UBS Private Banking",
+                            fr: "UBS France",
+                        },
+                        right: {
+                            en: "Paris, France",
+                            fr: "Paris, France",
+                        }
+                    },
+                    {
+                        type: 'list',
+                        items: [
+                            {
+                                en: "Worked on approximately 5 projects simultaneously while serving the business with reporting and investment proposals",
+                                fr: "Gestion de 5 projets simultanément tout en produisant des reportings et propositions d'investissement pour le front",
+                            },
+                            {
+                                en: "Involved in analyzing and enhancing bank processes to improve efficiency and mitigate risks",
+                                fr: "Participer à l'analyse et l'amélioration des processus de la banque et réduire les risques",
+                            },
+                            {
+                                en: "Creating Business Oriented Applications ensuring daily maintenance",
+                                fr: "Création et maintenance d'applications orientées business",
+                            },
+                            {
+                                en: "Collect data and user feedback from a dozen user pools to drive improvements and corrections",
+                                fr: "Collecte de données et retours utilisateurs à partir d'une dizaine d'équipes et propositions de correctifs",
+                            },
+                            {
+                                en: "Automate daily workflows and task management with Powershell, Python, and robotic process automation tools",
+                                fr: "Automatisation des workflows quotidiens de l'équipe avec Powershell, Python et de la RPA",
+                            },
+                            {
+                                en: "Managed the migration of 2 static applications to full-stack by building the backend, SQL database, and API",
+                                fr: "Gestion de 2 migrations d'appllication statique vers full-stack en construisant backend, base de données et API",
+                            },
+                        ]
+                    }
+                ],
+                [
+                    {
+                        type: 'header',
+                        left: { en: "Investment Analyst, internship", fr: "Investment Analyst, stage" },
+                        right: { en: "6 months, 07/2022 - 12/2022", fr: "6 mois, 07/2022 - 12/2022" },
+                    },
+                    {
+                        type: 'header',
+                        left: { en: "UBS Private Banking", fr: "UBS France" },
+                        right: { en: "Paris, France", fr: "Paris, France" },
+                    },
+                    {
+                        type: 'list',
+                        items: [
+                            {
+                                en: "Worked with bankers and product specialists to create tailor-made investment proposals for UHNW clients (30M€+ portfolios)",
+                                fr: "Travail avec les banquiers, les gérants et spécialistes pour créer des propositions d'investissement pour des clients UHNW (±30M€ de patrimoine)"
+                            },
+                            {
+                                en: "Creation of ±5 full reports/month, including changes and detailed calculation of portfolio performance",
+                                fr: "Édition d'en moyenne 5 reportings par mois récapitulant les mouvements et des calculs détaillés de la performance"
+                            },
+                            {
+                                en: "Maintained and improved a tool to automate reporting with Python and VBA",
+                                fr: "Maintenance et amélioration d'outils automatisés avec Python et VBA"
+                            },
+                            {
+                                en: "Automated reading of a stack of over 10,000 PDF documents to update databases made with text and image recognition modules",
+                                fr: "Automatisation de la lecture d'environ 10 000 documents PDF afin d'alimenter une base de données à l'aide de modules de reconnaissance de texte et d'images"
+                            },
+                        ]
+                    }
+                ],
+                [
+                    {
+                        type: 'header',
+                        left: {
+                            en: "Equity Analyst, internship",
+                            fr: "Equity Analyst, stage"
+                        },
+                        right: {
+                            en: "6 months, 01/2022 - 06/2022",
+                            fr: "6 mois, 01/2022 - 06/2022"
+                        }
+                    },
+                    {
+                        type: 'header',
+                        left: {
+                            en: "Obsido Family Office",
+                            fr: "Obsido Family Office"
+                        },
+                        right: {
+                            en: "Paris, France",
+                            fr: "Paris, France"
+                        }
+                    },
+                    {
+                        type: 'list',
+                        items: [
+                            {
+                                en: "Elaborated a weekly presentation paper for a weekly client meeting containing analyses and short briefs about recent news from US and EU largest listed companies including results, corporate governance publications",
+                                fr: "Élaboration d'un support de réunion hebdomadaire contenant des analyses de l'actualité récente de grandes sociétés cotées aux États-Unis et dans l'UE comprenant résultats, publications et gouvernance d'entreprise"
+                            },
+                            {
+                                en: "Wrote around 20 deeply documented sheets about fundamental and financial analysis using qualitative and quantitative sources",
+                                fr: "Rédaction de ±20 documents détaillés d'analyse fondamentale et financière à l'aide de sources qualitatives et quantitatives"
+                            },
+                            {
+                                en: "Monitored and improved a portfolio tracking application using Excel VBA",
+                                fr: "Maintenance et amélioration d'une application de tracking de portefeuille avec Excel et VBA"
+                            },
+                        ]
+                    }
+                ],
+            ],
+        },
+        {
+            section_type: 'box-section',
+            section_name: {
+                en: "EDUCATION",
+                fr: "PARCOURS ACADÉMIQUE",
+            },
+            section_content: [
+                [
+                    {
+                        type: 'header',
+                        left: {
+                            en: "SKEMA Business School",
+                            fr: "SKEMA Business School",
+                        },
+                        right: {
+                            en: "2020 - 2024",
+                            fr: "2020 - 2024"
+                        }
+                    },
+                    {
+                        type: 'header',
+                        left: {
+                            en: "Master in Management (Programme Grande École)",
+                            fr: null
+                        },
+                        right: {
+                            en: "Lille, France",
+                            fr: "Lille, France"
+                        },
+                    },
+                    {
+                        type: 'list',
+                        items: [
+                            {
+                                en: "Electives in finance: Derivatives, Fixed Income, Machine-Learning, Portfolio Management, Financial Markets & Institutions",
+                                fr: null
+                            },
+                            {
+                                en: "Core courses: Economics, Accounting, Corporate Finance, Tax & Legal, Geopolitics, Strategy, Marketing, Quantitative Methods",
+                                fr: null
+                            },
+                        ]
+                    },
+                    {
+                        type: 'header',
+                        left: {
+                            en: "MS in Wealth Management",
+                            fr: null
+                        },
+                        right: {
+                            en: "Paris, France",
+                            fr: "Paris, France"
+                        },
+                    },
+                    {
+                        type: 'list',
+                        items: [
+                            {
+                                en: "Inheritance management, Structured Products, Life-Insurance, Real-Estate, Banking products, French and international taxation",
+                                fr: null
+                            },
+                            {
+                                en: "Professional Thesis: How can private banks reconcile technological innovation with a personalized customer offering and exclusive service as part of their digital transformation?",
+                                fr: null
+                            },
+                        ]
+                    },
+                    {
+                        type: 'header',
+                        left: {
+                            en: "5-month Exchange Semester in Brazil",
+                            fr: null
+                        },
+                        right: {
+                            en: "Belo Horizonte, Brazil",
+                            fr: "Belo Horizonte, Brésil"
+                        },
+                    },
+                ],
+                [
+                    {
+                        type: 'header',
+                        left: {
+                            en: "Lycée Saint-Joseph du Loquidy",
+                            fr: "Lycée Saint-Joseph du Loquidy",
+                        },
+                        right: {
+                            en: "2018 - 2020",
+                            fr: "2018 - 2020"
+                        }
+                    },
+                    {
+                        type: 'header',
+                        left: {
+                            en: "Two-year undergraduate intensive preparation for the entrance exams to top French Business schools (CPGE ECE)",
+                            fr: null
+                        },
+                        right: {
+                            en: "Nantes, France",
+                            fr: "Nantes, France"
+                        },
+                    },
+                ],
+            ],
+        },
+        {
+            section_type: 'box-section',
+            section_name: {
+                en: "MAIN PROJECTS",
+                fr: "PROJETS PRINCIPAUX"
+            },
+            section_content: [
+
+                [{
+                    type: 'header',
+                    left: {
+                        en: "Ticket management application",
+                        fr: null,
+                    },
+                    right: {
+                        en: "Languages: NextJS, React, Javascript, Typescript, SQL, NoSQL",
+                        fr: null,
+                        special: 'italic'
+                    }
+                }],
+                [{
+                    type: 'header',
+                    left: {
+                        en: "CRM and reporting generator",
+                        fr: null,
+                    },
+                    right: {
+                        en: "Languages: Javascript, HTML, CSS, Python, Windows Server 2016, IIS",
+                        fr: null,
+                        special: 'italic'
+                    }
+                }],
+                [{
+                    type: 'header',
+                    left: {
+                        en: "PDF reader robot",
+                        fr: null,
+                    },
+                    right: {
+                        en: "Language: Python (Pytesseract, TensorFlow)",
+                        fr: null,
+                        special: 'italic'
+                    }
+                }],
+                [{
+                    type: 'header',
+                    left: {
+                        en: "Fund data scraper",
+                        fr: null,
+                    },
+                    right: {
+                        en: "Languages: Python, Javascript, HTML, CSS",
+                        fr: null,
+                        special: 'italic'
+                    }
+                }],
+            ],
+        },
+        {
+            section_type: 'box-column-section',
+            section_name: {
+                en: "HARD SKILLS",
+                fr: null,
+            },
+            section_content: [
+                [
+                    {
+                        type: 'header',
+                        left: {
+                            en: "Programming languages",
+                            fr: null
+                        },
+                    },
+                    {
+                        type: 'list',
+                        items: [
+                            {
+                                en: "Javascript, HTML, CSS", fr: null
+                            },
+                            {
+                                en: "Python", fr: null
+                            },
+                            {
+                                en: "VBA", fr: null
+                            },
+                            {
+                                en: "SQL", fr: null
+                            },
+                            {
+                                en: "Batch/Powershell", fr: null
+                            },
+                            {
+                                en: "C# / .NET (basics)", fr: null
+                            },
+                            {
+                                en: "Dart", fr: null
+                            },
+                        ]
+                    }
+                ],
+                [
+                    {
+                        type: 'header',
+                        left: {
+                            en: "Frameworks and modules",
+                            fr: null
+                        },
+                    },
+                    {
+                        type: 'list',
+                        items: [
+                            { en: "NodeJS, Typescript, React & NextJS", fr: null },
+                            {
+                                en: `Python
+                                <div class="box-list">
+                                    <ul>
+                                        <li>Backend: Django, Flask</li>
+                                        <li>Data: pandas, numpy</li>
+                                        <li>AI: pytesseract, TensorFlow</li>
+                                        <li>Webscraping: requests, selenium</li>
+                                    </ul>
+                                </div>`, fr: null
+                            }
+                        ]
+                    },
+                ],
+                [
+                    {
+                        type: 'header',
+                        left: {
+                            en: "Softwares",
+                            fr: null
+                        },
+                    },
+                    {
+                        type: 'list',
+                        items: [
+                            { en: "Git - Gitlab" },
+                            { en: "Visual Studio Code" },
+                            { en: "MS Office" },
+                            { en: "PowerBI, Alteryx" },
+                            { en: "MongoDB, SQL Server" },
+                            { en: "Bloomberg" },
+                        ]
+                    }
+                ],
+                [
+                    {
+                        type: 'header',
+                        left: {
+                            en: "Competencies",
+                            fr: null
+                        },
+                    },
+                    {
+                        type: 'list',
+                        items: [
+                            { en: "Building APIs" },
+                            { en: "Data Analysis" },
+                            { en: "Web-scraping" },
+                            { en: "SQL/NoSQL" },
+                            { en: "Financial modeling" },
+                            { en: "Machine Learning" },
+                        ]
+                    }
+                ],
+            ]
+        },
+        {
+            section_type: 'box-column-section',
+            section_name: {
+                en: "MISCELLANEOUS",
+                fr: null,
+            },
+            section_content: [
+                [
+                    {
+                        type: 'header',
+                        left: {
+                            en: "Certifications",
+                            fr: null
+                        },
+                    },
+                    {
+                        type: 'list',
+                        items: [
+                            { en: "Certification AMF" },
+                            { en: "TOEFL ITP(570/ 677)" },
+                        ]
+                    }
+                ],
+                [
+                    {
+                        type: 'header',
+                        left: {
+                            en: "Languages",
+                            fr: null
+                        },
+                    },
+                    {
+                        type: 'list',
+                        items: [
+                            { en: "French (native)" },
+                            { en: "English (fluent)" },
+                            { en: "Spanish (professional)" },
+                            { en: "Portuguese (conversational)" },
+                        ]
+                    }
+                ],
+                [
+                    {
+                        type: 'header',
+                        left: {
+                            en: "Soft skills",
+                            fr: null
+                        },
+                    },
+                    {
+                        type: 'list',
+                        items: [
+                            { en: "Proactivity" },
+                            { en: "Teamwork" },
+                            { en: "Problem solving" },
+                        ]
+                    }
+                ],
+                [
+                    {
+                        type: 'header',
+                        left: {
+                            en: "References",
+                            fr: null
+                        },
+                    },
+                    {
+                        type: 'list',
+                        items: [
+                            {
+                                en: `<span class="bold">Yuanjing LU</span>, Executive Director at UBS France yuanjing.lu@ubs.com`
+                            },
+                        ]
+                    }
+                ],
+
+            ]
+        },
+
+    ];
+
+    const container = document.querySelector('.container')
+
+    const load = (language = languageCheck[false]) => {
+        container.innerHTML = '';
+        resume.forEach((section, _) => {
+
+            const newSection = document.createElement('div')
+            newSection.className = 'section'
+            section.section_name ? newSection.innerHTML = `<div class="section-header">${section.section_name[language]}</div>` : null
+
+            const newSectionBody = document.createElement('div');
+            newSectionBody.className = 'section-body';
+
+            switch (section.section_type) {
+                case 'resume-details':
+                    section.section_content.forEach(x => {
+                        const newResumeDetails = document.createElement('div');
+                        newResumeDetails.className = section.section_type;
+                        newResumeDetails.innerHTML = `
+            <div class="name bold">${x.name}</div>
+                <div class="details">${x.details}</div>
+            <div class="summary bold">${x.summary[language]}</div>
+            `
+                        newSectionBody.append(newResumeDetails);
+                    })
+                    break
+                case 'text-box':
+                    section.section_content.forEach(x => {
+                        const newTextBox = document.createElement('div');
+                        newTextBox.className = section.section_type;
+                        newTextBox.innerText = x[language];
+                        newSectionBody.append(newTextBox);
+                    });
+                    break
+                case 'box-section':
+                case 'box-column-section':
+                    newSectionBody.className += ` ${section.section_type}`;
+                    section.section_content.forEach(x => {
+                        const newBox = document.createElement('div');
+                        section.section_type == 'box-section' ? newBox.className = 'box' : newBox.className = 'box-column';
+                        x.forEach(y => {
+                            const newItem = document.createElement('div')
+                            switch (y.type) {
+                                case 'header':
+                                    newItem.innerHTML =
+                                        `<div class="box-header">
+                            ${y.left ? `<div class="left">${y.left[language]}</div>` : ''}
+                            ${y.right ? `<div class="right ${y.right.special ? y.right.special : ''}">${y.right[language]}</div>` : ''}
+                            </div>`
+                                    break;
+                                case 'list':
+                                    newItem.innerHTML =
+                                        `<div class="box-list ${section.section_type == 'box-section' ? 'long' : ''}">
+                                <ul>
+                                ${y.items.map(item => `<li>${item[language]}</li>`).join('')}
+                                </ul>
+                            </div>`;
+                                    break;
+                                default: break;
+                            };
+                            newBox.append(newItem);
+                        });
+                        newSectionBody.append(newBox);
+                    })
+                    break
+                default:
+                    break
+            }
+            newSection.append(newSectionBody)
+            container.append(newSection)
+        });
+    };
+
+    const toogle = document.querySelector("#language-toggle")
+    toogle.addEventListener('click', function () {
+        load(languageCheck[this.checked])
+    })
+
+    document.addEventListener('DOMContentLoaded', () => {
+        load()
+    })
+
+</script>
+
+</html>
