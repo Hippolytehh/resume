@@ -18,6 +18,42 @@
             <span class="label-right">Français</span>
     </div>
 
+    <div class="changing-container">
+        <span id="target"></span>
+    </div>
+    <script>
+        const list = [
+            "Software developer",
+            "Business Analyst",
+            "Investment Analyst"
+        ];
+        let crtIndex = 0;
+        const target = document.querySelector("#target");
+        function changeWord() {
+            target.classList.remove('fade-in');
+            setTimeout(() => {
+                target.innerText = list[crtIndex];
+                target.classList.add('fade-in');
+                crtIndex = (crtIndex + 1) % list.length;
+                console.log(crtIndex)
+            }, (1500));
+        };
+        target.textContent = list[crtIndex];
+        setInterval(changeWord, 3000)
+        changeWord
+    </script>
+
+    <style>
+        #target {
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+
+        .fade-out {
+            opacity: 1;
+        }
+    </style>
+
     <div class=" container">
     </div>
     <style>
@@ -249,10 +285,10 @@
             section_content: [
                 {
                     name: "Hippolyte LEPRELLE",
-                    details: `<a href="mailto:hippolyte.leprelle@skema.edu">hippolyte.leprelle@skema.edu</a> - +33 7 67 50 64 16 - Paris, France - <a href="linkedin.com/in/hippolyte-leprelle/">linkedin.com/in/hippolyte-leprelle/</a>`,
+                    details: `<a href="mailto:hippolyte.leprelle@skema.edu">hippolyte.leprelle@skema.edu</a> - +33 7 67 50 64 16 - Paris, France - <a href="https://www.linkedin.com/in/hippolyte-leprelle/" target="_blank">linkedin</a>`,
                     summary: {
-                        fr: "Disponible à partir de septembre/octobre 2024 pour une expérience de fin d'études en finance à l'étranger.",
-                        en: "Available from September/October 2024 for an end-of-study experience in finance abroad",
+                        fr: "Développeur fullstack",
+                        en: "Fullstack Software developer",
                     },
                 }
             ],
@@ -453,7 +489,7 @@
                         type: 'header',
                         left: {
                             en: "Master in Management (Programme Grande École)",
-                            fr: null
+                            fr: "Programme Grande École"
                         },
                         right: {
                             en: "Lille, France",
@@ -465,11 +501,11 @@
                         items: [
                             {
                                 en: "Electives in finance: Derivatives, Fixed Income, Machine-Learning, Portfolio Management, Financial Markets & Institutions",
-                                fr: null
+                                fr: "Cours électifs en finance : Produits dérivés, Fixed Income, Machine-Learning, Gestion de Portefeuille, Finance de marché"
                             },
                             {
                                 en: "Core courses: Economics, Accounting, Corporate Finance, Tax & Legal, Geopolitics, Strategy, Marketing, Quantitative Methods",
-                                fr: null
+                                fr: "Cours principaux : Économie, Comptabilité, Finance d'entreprise, Droit, Géopolitique, Stratégie, Marketing, Méthodes quantitatives"
                             },
                         ]
                     },
@@ -477,7 +513,7 @@
                         type: 'header',
                         left: {
                             en: "MS in Wealth Management",
-                            fr: null
+                            fr: "MS Gestion de Patrimoine"
                         },
                         right: {
                             en: "Paris, France",
@@ -489,11 +525,11 @@
                         items: [
                             {
                                 en: "Inheritance management, Structured Products, Life-Insurance, Real-Estate, Banking products, French and international taxation",
-                                fr: null
+                                fr: "Fiscalité, Succession, Immobilier, Assurance-vie, Produits banciares, Immobilier, Droit fiscal français et non-rédisent"
                             },
                             {
                                 en: "Professional Thesis: How can private banks reconcile technological innovation with a personalized customer offering and exclusive service as part of their digital transformation?",
-                                fr: null
+                                fr: "Thèse Professionnelle : Comment les banques privées peuvent-elles réussir leur transformation digitale en garantissant un service haut de gamme ?"
                             },
                         ]
                     },
@@ -501,7 +537,7 @@
                         type: 'header',
                         left: {
                             en: "5-month Exchange Semester in Brazil",
-                            fr: null
+                            fr: "Échange universitaire de 5 mois au Brésil"
                         },
                         right: {
                             en: "Belo Horizonte, Brazil",
@@ -524,8 +560,8 @@
                     {
                         type: 'header',
                         left: {
-                            en: "Two-year undergraduate intensive preparation for the entrance exams to top French Business schools (CPGE ECE)",
-                            fr: null
+                            en: "Two-year undergraduate intensive preparation for the entrance exams to top French Business schools",
+                            fr: "Classes Préparatoires aux Grandes Écoles de commerce"
                         },
                         right: {
                             en: "Nantes, France",
@@ -547,11 +583,11 @@
                     type: 'header',
                     left: {
                         en: "Ticket management application",
-                        fr: null,
+                        fr: "Application de gestion de tickets",
                     },
                     right: {
                         en: "Languages: NextJS, React, Javascript, Typescript, SQL, NoSQL",
-                        fr: null,
+                        fr: "Langages : NextJS, React, Javascript, Typescript, SQL, NoSQL",
                         special: 'italic'
                     }
                 }],
@@ -559,11 +595,11 @@
                     type: 'header',
                     left: {
                         en: "CRM and reporting generator",
-                        fr: null,
+                        fr: "CRM et générateur de reportings",
                     },
                     right: {
                         en: "Languages: Javascript, HTML, CSS, Python, Windows Server 2016, IIS",
-                        fr: null,
+                        fr: "Langages : Javascript, HTML, CSS, Python, Windows Server 2016, IIS",
                         special: 'italic'
                     }
                 }],
@@ -571,11 +607,11 @@
                     type: 'header',
                     left: {
                         en: "PDF reader robot",
-                        fr: null,
+                        fr: "Lecteur de PDF automatisé",
                     },
                     right: {
                         en: "Language: Python (Pytesseract, TensorFlow)",
-                        fr: null,
+                        fr: "Langage : Python (Pytesseract, TensorFlow)",
                         special: 'italic'
                     }
                 }],
@@ -583,11 +619,11 @@
                     type: 'header',
                     left: {
                         en: "Fund data scraper",
-                        fr: null,
+                        fr: "Scraping de données sur des fonds",
                     },
                     right: {
                         en: "Languages: Python, Javascript, HTML, CSS",
-                        fr: null,
+                        fr: "Langages : Python, Javascript, HTML, CSS",
                         special: 'italic'
                     }
                 }],
@@ -597,7 +633,7 @@
             section_type: 'box-column-section',
             section_name: {
                 en: "HARD SKILLS",
-                fr: null,
+                fr: "COMPÉTENCES TECHNIQUES",
             },
             section_content: [
                 [
@@ -605,32 +641,39 @@
                         type: 'header',
                         left: {
                             en: "Programming languages",
-                            fr: null
+                            fr: "Langages de programmation"
                         },
                     },
                     {
                         type: 'list',
                         items: [
                             {
-                                en: "Javascript, HTML, CSS", fr: null
+                                en: "Javascript, HTML, CSS",
+                                fr: "Javascript, HTML, CSS"
                             },
                             {
-                                en: "Python", fr: null
+                                en: "Python",
+                                fr: "Python"
                             },
                             {
-                                en: "VBA", fr: null
+                                en: "VBA",
+                                fr: "VBA"
                             },
                             {
-                                en: "SQL", fr: null
+                                en: "SQL",
+                                fr: "SQL"
                             },
                             {
-                                en: "Batch/Powershell", fr: null
+                                en: "Batch/Powershell",
+                                fr: "Batch/Powershell"
                             },
                             {
-                                en: "C# / .NET (basics)", fr: null
+                                en: "C# / .NET (basics)",
+                                fr: "C# / .NET (bases)"
                             },
                             {
-                                en: "Dart", fr: null
+                                en: "Dart",
+                                fr: "Dart"
                             },
                         ]
                     }
@@ -640,13 +683,16 @@
                         type: 'header',
                         left: {
                             en: "Frameworks and modules",
-                            fr: null
+                            fr: "Frameworks et modules"
                         },
                     },
                     {
                         type: 'list',
                         items: [
-                            { en: "NodeJS, Typescript, React & NextJS", fr: null },
+                            {
+                                en: "NodeJS, Typescript, React & NextJS",
+                                fr: "NodeJS, Typescript, React et NextJS"
+                            },
                             {
                                 en: `Python
                                 <div class="box-list">
@@ -656,7 +702,16 @@
                                         <li>AI: pytesseract, TensorFlow</li>
                                         <li>Webscraping: requests, selenium</li>
                                     </ul>
-                                </div>`, fr: null
+                                </div>`,
+                                fr: `Python
+                                <div class="box-list">
+                                    <ul>
+                                        <li>Backend : Django, Flask</li>
+                                        <li>Data : pandas, numpy</li>
+                                        <li>IA : pytesseract, TensorFlow</li>
+                                        <li>Webscraping: requests, selenium</li>
+                                    </ul>
+                                </div>`
                             }
                         ]
                     },
@@ -666,18 +721,36 @@
                         type: 'header',
                         left: {
                             en: "Softwares",
-                            fr: null
+                            fr: "Logiciels"
                         },
                     },
                     {
                         type: 'list',
                         items: [
-                            { en: "Git - Gitlab" },
-                            { en: "Visual Studio Code" },
-                            { en: "MS Office" },
-                            { en: "PowerBI, Alteryx" },
-                            { en: "MongoDB, SQL Server" },
-                            { en: "Bloomberg" },
+                            {
+                                en: "Git - Gitlab",
+                                fr: "Git - Gitlab"
+                            },
+                            {
+                                en: "Visual Studio Code",
+                                fr: "Visual Studio Code"
+                            },
+                            {
+                                en: "MS Office",
+                                fr: "MS Office"
+                            },
+                            {
+                                en: "PowerBI, Alteryx",
+                                fr: "PowerBI, Alteryx"
+                            },
+                            {
+                                en: "MongoDB, SQL Server",
+                                fr: "MongoDB, SQL Server"
+                            },
+                            {
+                                en: "Bloomberg",
+                                fr: "Bloomberg"
+                            },
                         ]
                     }
                 ],
@@ -686,18 +759,36 @@
                         type: 'header',
                         left: {
                             en: "Competencies",
-                            fr: null
+                            fr: "Compétences"
                         },
                     },
                     {
                         type: 'list',
                         items: [
-                            { en: "Building APIs" },
-                            { en: "Data Analysis" },
-                            { en: "Web-scraping" },
-                            { en: "SQL/NoSQL" },
-                            { en: "Financial modeling" },
-                            { en: "Machine Learning" },
+                            {
+                                en: "Building REST APIs",
+                                fr: "Création d'API REST"
+                            },
+                            {
+                                en: "Data Analysis",
+                                fr: "Analyse de données"
+                            },
+                            {
+                                en: "Web-scraping",
+                                fr: "Web-scraping"
+                            },
+                            {
+                                en: "SQL/NoSQL",
+                                fr: "SQL/NoSQL"
+                            },
+                            {
+                                en: "Financial modeling",
+                                fr: "Modélisation financière"
+                            },
+                            {
+                                en: "Machine Learning",
+                                fr: "Machine Learning"
+                            },
                         ]
                     }
                 ],
@@ -707,7 +798,7 @@
             section_type: 'box-column-section',
             section_name: {
                 en: "MISCELLANEOUS",
-                fr: null,
+                fr: "DIVERS",
             },
             section_content: [
                 [
@@ -715,14 +806,20 @@
                         type: 'header',
                         left: {
                             en: "Certifications",
-                            fr: null
+                            fr: "Certifications"
                         },
                     },
                     {
                         type: 'list',
                         items: [
-                            { en: "Certification AMF" },
-                            { en: "TOEFL ITP(570/ 677)" },
+                            {
+                                en: "Certification AMF",
+                                fr: "Certification AMF"
+                            },
+                            {
+                                en: "TOEFL ITP(570/ 677)",
+                                fr: "TOEFL ITP(570/ 677)"
+                            },
                         ]
                     }
                 ],
@@ -731,16 +828,28 @@
                         type: 'header',
                         left: {
                             en: "Languages",
-                            fr: null
+                            fr: "Langues"
                         },
                     },
                     {
                         type: 'list',
                         items: [
-                            { en: "French (native)" },
-                            { en: "English (fluent)" },
-                            { en: "Spanish (professional)" },
-                            { en: "Portuguese (conversational)" },
+                            {
+                                en: "French (native)",
+                                fr: "Français (langue natale)"
+                            },
+                            {
+                                en: "English (fluent)",
+                                fr: "Anglais (bilingue)"
+                            },
+                            {
+                                en: "Spanish (professional)",
+                                fr: "Espagnol (professionnel)"
+                            },
+                            {
+                                en: "Portuguese (conversational)",
+                                fr: "Portugais (conversationnel)"
+                            },
                         ]
                     }
                 ],
@@ -749,15 +858,24 @@
                         type: 'header',
                         left: {
                             en: "Soft skills",
-                            fr: null
+                            fr: "Soft skills"
                         },
                     },
                     {
                         type: 'list',
                         items: [
-                            { en: "Proactivity" },
-                            { en: "Teamwork" },
-                            { en: "Problem solving" },
+                            {
+                                en: "Proactivity",
+                                fr: "Proactivité"
+                            },
+                            {
+                                en: "Teamwork",
+                                fr: "Travail en équipe"
+                            },
+                            {
+                                en: "Problem solving",
+                                fr: "Résolution de problèmes"
+                            },
                         ]
                     }
                 ],
@@ -766,14 +884,15 @@
                         type: 'header',
                         left: {
                             en: "References",
-                            fr: null
+                            fr: "Références"
                         },
                     },
                     {
                         type: 'list',
                         items: [
                             {
-                                en: `<span class="bold">Yuanjing LU</span>, Executive Director at UBS France yuanjing.lu@ubs.com`
+                                en: `<span class="bold">Yuanjing LU</span>, Executive Director at UBS France yuanjing.lu@ubs.com`,
+                                fr: `<span class="bold">Yuanjing LU</span>, Executive Director chez UBS France yuanjing.lu@ubs.com`
                             },
                         ]
                     }
