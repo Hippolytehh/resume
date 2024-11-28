@@ -1,3 +1,8 @@
+html,
+body {
+    font-size: 9.5pt;
+}
+
 @media screen {
 
     html,
@@ -5,12 +10,22 @@
         animation: fadeIn 1s;
         -webkit-text-size-adjust: 100%;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 10.5pt;
         margin: 0 10px;
     }
 
     .container {
         padding-top: 25px;
+    }
+
+    .page-limit {
+        position: absolute;
+        top: calc(297mm - 25px);
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: red;
+        z-index: 1000;
+        pointer-events: none;
     }
 
 }
@@ -23,7 +38,6 @@
         max-width: 210mm;
         height: 297mm;
         max-height: 297mm;
-        font-size: 10.5pt;
         padding: 0;
         margin: 0;
     }
