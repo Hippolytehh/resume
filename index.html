@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="./style.css">
 
-    <script src="./data.js"></script>
+    <script src="/data/cfm.js"></script>
 
     <title>CV - Hippolyte LEPRELLE</title>
 </head>
@@ -38,6 +38,13 @@
     const container = document.querySelector('.container')
 
     const load = (language = languageCheck[false]) => {
+
+        if (language == 'en') {
+            document.title = "RESUME - Hippolyte LEPRELLE";
+        } else if (language == 'fr') {
+            document.title = "CV - Hippolyte LEPRELLE";
+        }
+
         container.innerHTML = '';
         resume.forEach((section, _) => {
 
