@@ -21,7 +21,7 @@ const resume = [
         section_content: [
             {
                 fr: "A la recherche de mon premier CDI en tant que développeur junior, mon parcours en finance a nourri ma passion pour la programmation, et aujourd'hui, ces deux domaines sont devenus des éléments clés de mon parcours professionnel. Je souhaite mettre à profit cette double compétence pour créer des solutions techniques innovantes combinant finance et développement.",
-                en: "Passionate about finance and programming, I acquired my technical IT skills through hand-on experiences and my desire to constantly expand my knowledge. I'm committed to developing tools that meet the needs of business first. My IT expertise covers various languages such as Python, SQL, Javascript or VBA applied to the development and interaction with apps and databases, quantitative analysis as well as automation."
+                en: "Passionate about finance and programming, I acquired my technical IT skills through hand-on experiences and my desire to constantly expand my knowledge. I'm committed to developing tools that meet the needs of business first. My IT expertise covers various languages such as Python, SQL, Javascript or VBA applied to the development and interaction with apps and databases, analysis as well as automation."
             }
         ]
     },
@@ -296,7 +296,7 @@ const resume = [
                 {
                     type: 'header',
                     left: {
-                        en: "Two-year undergraduate intensive preparation for the entrance exams to top French Business schools",
+                        en: "Two-year undergraduate intensive preparation for the entrance exams to top French Business schools, CPGE ECE",
                         fr: "Classes Préparatoires aux Grandes Écoles de commerce"
                     },
                     right: {
@@ -314,7 +314,20 @@ const resume = [
             fr: "PROJETS PRINCIPAUX"
         },
         section_content: [
-
+            [
+                {
+                    type: 'header',
+                    left: {
+                        en: `<span style="background: yellow">PROJET DATA VIS</span>`,
+                        fr: "",
+                    },
+                    right: {
+                        en: `<span style="background: yellow">Languages: </span>`,
+                        fr: "",
+                        special: 'italic'
+                    }
+                }
+            ],
             [
                 {
                     type: 'header',
@@ -437,10 +450,10 @@ const resume = [
                             en: `Python
                             <div class="box-list">
                             <ul>
-                            <li>Backend: Django, Flask</li>
-                            <li>Data: regex, pandas, Jupyter</li>
-                            <li>Machine Learning: pytesseract, TensorFlow</li>
-                            <li>Webscraping: requests, selenium</li>
+                            <li style="text-align: left;">Backend: Django, Flask</li>
+                            <li style="text-align: left;">Data: regex, pandas, Jupyter</li>
+                            <li style="text-align: left;">Machine Learning: pytesseract, TensorFlow</li>
+                            <li style="text-align: left;">Webscraping: requests, selenium</li>
                             </ul>
                             </div>`,
                             fr: `Python
