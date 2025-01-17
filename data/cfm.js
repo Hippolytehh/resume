@@ -21,7 +21,7 @@ const resume = [
         section_content: [
             {
                 fr: "A la recherche de mon premier CDI en tant que développeur junior, mon parcours en finance a nourri ma passion pour la programmation, et aujourd'hui, ces deux domaines sont devenus des éléments clés de mon parcours professionnel. Je souhaite mettre à profit cette double compétence pour créer des solutions techniques innovantes combinant finance et développement.",
-                en: "Passionate about finance and programming, I acquired my technical IT skills through my professional experiences and my desire to expand my knowledge. I'm committed to developing tools that meet the needs of business first. My IT expertise covers various languages such as Python, SQL, Javascript or VBA in application and database development, quantitative analysis as well as complex automation."
+                en: "Passionate about finance and programming, I acquired my technical IT skills through hand-on experiences and my desire to constantly expand my knowledge. I'm committed to developing tools that meet the needs of business first. My IT expertise covers various languages such as Python, SQL, Javascript or VBA applied to the development and interaction with apps and databases, quantitative analysis as well as automation."
             }
         ]
     },
@@ -260,15 +260,15 @@ const resume = [
                         fr: "Paris, France"
                     },
                 },
-                {
-                    type: 'list',
-                    items: [
-                        {
-                            en: "Inheritance management, Structured Products, Life-Insurance, Real-Estate, Banking products, French and international taxation",
-                            fr: ""
-                        }
-                    ]
-                },
+                // {
+                //     type: 'list',
+                //     items: [
+                //         {
+                //             en: "Inheritance management, Structured Products, Life-Insurance, Real-Estate, Banking products, French and international taxation",
+                //             fr: ""
+                //         }
+                //     ]
+                // },
                 {
                     type: 'header',
                     left: {
@@ -329,20 +329,20 @@ const resume = [
                     }
                 }
             ],
-            [
-                {
-                    type: 'header',
-                    left: {
-                        en: "Ticket management application",
-                        fr: "Application de gestion de tickets",
-                    },
-                    right: {
-                        en: "Languages: NextJS, ReactJS, Javascript, Typescript, SQL, NoSQL",
-                        fr: "",
-                        special: 'italic'
-                    }
-                }
-            ],
+            // [
+            //     {
+            //         type: 'header',
+            //         left: {
+            //             en: "Ticket management application",
+            //             fr: "Application de gestion de tickets",
+            //         },
+            //         right: {
+            //             en: "Languages: NextJS, ReactJS, Javascript, Typescript, SQL, NoSQL",
+            //             fr: "",
+            //             special: 'italic'
+            //         }
+            //     }
+            // ],
             [{
                 type: 'header',
                 left: {
@@ -370,11 +370,11 @@ const resume = [
             [{
                 type: 'header',
                 left: {
-                    en: "Fund data scraper",
+                    en: "Fund data scraper and and brochure format viewer",
                     fr: "Scraping de données sur des fonds",
                 },
                 right: {
-                    en: "Languages: Python, Javascript, HTML, CSS",
+                    en: "Languages: Python (regex, requests, pandas), Javascript, HTML, CSS",
                     fr: "Langages : Python, Javascript, HTML, CSS",
                     special: 'italic'
                 }
@@ -438,7 +438,7 @@ const resume = [
                             <div class="box-list">
                             <ul>
                             <li>Backend: Django, Flask</li>
-                            <li>Data: pandas, Jupyter</li>
+                            <li>Data: regex, pandas, Jupyter</li>
                             <li>Machine Learning: pytesseract, TensorFlow</li>
                             <li>Webscraping: requests, selenium</li>
                             </ul>
@@ -447,7 +447,7 @@ const resume = [
                             <div class="box-list">
                             <ul>
                             <li>Backend : Django, Flask</li>
-                            <li>Data : pandas, Jupyter</li>
+                            <li>Data : regex, pandas, Jupyter</li>
                             <li>IA : pytesseract, TensorFlow</li>
                             <li>Webscraping: requests, selenium</li>
                             </ul>
@@ -528,10 +528,6 @@ const resume = [
                         {
                             en: "Financial modeling",
                             fr: "Modélisation financière"
-                        },
-                        {
-                            en: "",
-                            fr: "Machine Learning"
                         },
                     ]
                 }
