@@ -244,12 +244,8 @@ const resume = [
                     type: 'list',
                     items: [
                         {
-                            en: "Electives in finance: Derivatives, Fixed Income, Machine-Learning, Portfolio Management, Financial Markets & Institutions",
+                            en: "Electives in financial markets",
                             fr: "Cours électifs en finance : Produits dérivés, Fixed Income, Machine-Learning, Gestion de Portefeuille, Finance de marché"
-                        },
-                        {
-                            en: "Core courses: Economics, Accounting, Corporate Finance, Tax & Legal, Geopolitics, Strategy, Marketing, Quantitative Methods",
-                            fr: "Cours principaux : Économie, Comptabilité, Finance d'entreprise, Droit, Géopolitique, Stratégie, Marketing, Méthodes quantitatives"
                         },
                     ]
                 },
