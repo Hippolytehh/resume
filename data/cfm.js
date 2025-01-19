@@ -20,8 +20,8 @@ const resume = [
         },
         section_content: [
             {
-                fr: "A la recherche de mon premier CDI en tant que développeur junior, mon parcours en finance a nourri ma passion pour la programmation, et aujourd'hui, ces deux domaines sont devenus des éléments clés de mon parcours professionnel. Je souhaite mettre à profit cette double compétence pour créer des solutions techniques innovantes combinant finance et développement.",
-                en: "Passionate about finance and programming, I acquired my technical IT skills through hand-on experiences and my desire to constantly expand my knowledge. I'm committed to developing tools that meet the needs of business first. My IT expertise covers various languages such as Python, SQL, Javascript or VBA applied to the development and interaction with apps and databases, analysis as well as automation."
+                fr: "",
+                en: "Passionate about finance and programming, I acquired my IT skills through hands-on experience and a desire to expand my knowledge. I'm committed to developing tools that prioritize business needs. My expertise covers languages like Python, SQL, JavaScript, and VBA, applied to app development, database interaction, analysis, and automation."
             }
         ]
     },
@@ -59,26 +59,27 @@ const resume = [
                     type: 'list',
                     items: [
                         {
-                            en: "Design of a central database in PostgreSQL relying on accounting rules and carefully selected conventions: transaction management; development of complex join queries, triggers, stored procedures and views; implementation of a robust audit trail and access management",
-                            fr: "",
+                            en: "Designed a PostgreSQL database based on accounting rules: transaction management, join queries, triggers, stored procedures, views, and audit trail with access management",
+                            fr: ""
                         },
                         {
-                            en: "Audit of IT hardware and software infrastructures, focusing on 5 major themes including the central database, network file management, source code versioning and development environments; implementation of recommendations and follow-up via regular presentations to colleagues",
-                            fr: "",
+                            en: "Audited IT infrastructures across 5 themes (central database, network file management, version control, dev environments); implemented recommendations and reported regularly to colleagues",
+                            fr: ""
                         },
                         {
-                            en: "Creation of a tool to automate the daily reconciliation of the fund's trading and accounting data with counterparties",
-                            fr: "",
+                            en: "Created a tool to automate daily reconciliation of the fund’s trading and accounting data with counterparties",
+                            fr: ""
                         },
                         {
-                            en: "Development of a Python project for frequent verification of the customer base with official government APIs; application of a fuzzy matching (levenstein algorithm) to compute distance and applying a margin",
-                            fr: "",
+                            en: "Developed a Python project to verify customer data with government APIs using fuzzy matching (Levenshtein) and apply a margin",
+                            fr: ""
                         },
                         {
-                            en: "Integration of market data in databases and risk simulations like VaR with Bloomberg and its Desktop API",
-                            fr: "",
-                        },
+                            en: "Integrated market data into databases and risk simulations (VaR) with Bloomberg Desktop API",
+                            fr: ""
+                        }
                     ]
+
                 }
             ],
             [
@@ -108,26 +109,27 @@ const resume = [
                     type: 'list',
                     items: [
                         {
-                            en: "Development of customer portfolio analysis tools for the front office, including cross-asset performance calculations, backtesting and simulation, as well as decision-support tools for portfolio management and book monitoring to match CIO recommendations for instance",
-                            fr: "",
+                            en: "Developed customer portfolio analysis tools for the front office, including cross-asset performance calculations, backtesting, simulation, and decision-support tools for portfolio management and book monitoring to align with CIO recommendations",
+                            fr: ""
                         },
                         {
-                            en: "Day-to-day maintenance and improvement of the team's applications; implementation of workflow management tools with Python, Powershell and Alteryx in particular to feed these applications on a daily basis",
-                            fr: "",
+                            en: "Maintained and improved team applications; implemented workflow management tools using Python, PowerShell, and Alteryx to feed these applications daily",
+                            fr: ""
                         },
                         {
-                            en: "Set up UAC test campaigns for ten or so departments on the team's tools; collected data and user feedback from ten or so teams; produced improvement and correction specs",
-                            fr: "",
+                            en: "Set up UAC test campaigns for 10+ departments; collected data and feedback from teams; produced improvement and correction specs",
+                            fr: ""
                         },
                         {
-                            en: "Successful design of a fully functional mockup of a support ticket management application in less than 3 weeks in React with NextJS and Mongo DB, for presentation to top management",
-                            fr: "",
+                            en: "Designed a fully functional support ticket management mockup in React with NextJS and MongoDB in under 3 weeks for presentation to top management",
+                            fr: ""
                         },
                         {
-                            en: "Managed the migration of 2 static applications to full-stack, building the backend with Django and NodeJS, the database with SQL Server and the API",
-                            fr: "",
+                            en: "Managed the migration of 2 static applications to full-stack, building the backend with Django and NodeJS, and the database with SQL Server and the API",
+                            fr: ""
                         }
                     ]
+
                 }
             ],
             [
@@ -145,22 +147,23 @@ const resume = [
                     type: 'list',
                     items: [
                         {
-                            en: "Worked with bankers and product specialists to create tailor-made investment proposals for UHNW clients (30M€+ portfolios)",
+                            en: "Collaborated with bankers and product specialists to create customized investment proposals for UHNW clients (±30M€)",
                             fr: "Travail avec les banquiers, les gérants et spécialistes pour créer des propositions d'investissement pour des clients UHNW (±30M€ de patrimoine)"
                         },
                         {
-                            en: "Creation of ±5 full reports/month, including changes and detailed calculation of portfolio performance",
+                            en: "Created ±5 reports per month, including updates and detailed portfolio performance calculations",
                             fr: "Édition d'en moyenne 5 reportings par mois récapitulant les mouvements et des calculs détaillés de la performance"
                         },
                         {
-                            en: "Automated reading of a stack of over 10,000 PDF documents with Python to update databases made with text and image recognition modules",
+                            en: "Automated processing of over 10,000 PDFs with Python to update databases using text and image recognition modules",
                             fr: "Automatisation de la lecture d'environ 10 000 documents PDF afin d'alimenter une base de données à l'aide de modules de reconnaissance de texte et d'images"
                         },
                         {
-                            en: "Maintained and improved a tool to automate a portfolio reporting tool with Python and VBA",
+                            en: "Maintained and enhanced a tool to automate portfolio reporting using Python and VBA",
                             fr: "Maintenance et amélioration d'outils automatisés avec Python et VBA"
-                        },
+                        }
                     ]
+
                 }
             ],
             [
@@ -190,18 +193,19 @@ const resume = [
                     type: 'list',
                     items: [
                         {
-                            en: "Elaborated a presentation paper for a weekly client meeting containing analyses and short briefs about recent news from US and EU largest listed companies including results, corporate governance publications",
-                            fr: "Élaboration d'un support de réunion hebdomadaire contenant des analyses de l'actualité récente de grandes sociétés cotées aux États-Unis et dans l'UE comprenant résultats, publications et gouvernance d'entreprise"
+                            en: "Prepared a paper for weekly client meetings gathering analyses and briefs over recent news from US and EU listed companies (results, governance and publications)",
+                            fr: ""
                         },
                         {
-                            en: "Wrote ±20 deeply documented sheets about fundamental and financial analysis using qualitative and quantitative sources",
-                            fr: "Rédaction de ±20 documents détaillés d'analyse fondamentale et financière à l'aide de sources qualitatives et quantitatives"
+                            en: "Wrote ±20 documented sheets on fundamental and financial analysis using qualitative and quantitative sources",
+                            fr: ""
                         },
                         {
-                            en: "Monitored and improved a portfolio tracking application using Excel VBA",
-                            fr: "Maintenance et amélioration d'une application de tracking de portefeuille avec Excel et VBA"
+                            en: "Monitored and improved a portfolio tracking application with Excel VBA",
+                            fr: ""
                         },
                     ]
+
                 }
             ],
         ],
@@ -308,6 +312,175 @@ const resume = [
         ],
     },
     {
+        section_type: 'box-column-section',
+        section_name: {
+            en: "HARD SKILLS",
+            fr: "COMPÉTENCES TECHNIQUES",
+        },
+        section_content: [
+            [
+                {
+                    type: 'header',
+                    left: {
+                        en: "Python",
+                        fr: "Langages de programmation"
+                    },
+                },
+                {
+                    type: 'list',
+                    items: [
+                        {
+                            en: "Data: pandas, regex, numpy, requests, selenium",
+                            fr: "Python"
+                        },
+                        {
+                            en: "ML: pytesseract, TensorFlow",
+                            fr: "Python"
+                        },
+                    ]
+                }
+            ],
+            [
+                {
+                    type: 'header',
+                    left: {
+                        en: "SQL",
+                        fr: "Langages de programmation"
+                    },
+                },
+                {
+                    type: 'list',
+                    items: [
+                        {
+                            en: "PostgreSQL / SQL Server",
+                            fr: ""
+                        },
+                        {
+                            en: "Database design & normalization",
+                            fr: ""
+                        },
+                        {
+                            en: "Procedures, Triggers & Views",
+                            fr: ""
+                        },
+                        {
+                            en: "Data analysis",
+                            fr: ""
+                        },
+                    ]
+                }
+            ],
+            [
+                {
+                    type: 'header',
+                    left: {
+                        en: "Web-devevelopment",
+                        fr: ""
+                    },
+                },
+                {
+                    type: 'list',
+                    items: [
+                        {
+                            en: "Javascript NodeJS: React, Next & TypeScript",
+                            fr: ""
+                        },
+                        {
+                            en: "Python: Django & Flask",
+                            fr: ""
+                        },
+                        {
+                            en: "RestAPI & JSON",
+                            fr: ""
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    type: 'header',
+                    left: {
+                        en: "Automation",
+                        fr: ""
+                    },
+                },
+                {
+                    type: 'list',
+                    items: [
+                        {
+                            en: "VBA",
+                            fr: ""
+                        },
+                        {
+                            en: "Batch & Powershell",
+                            fr: ""
+                        },
+                        {
+                            en: "Task Scheduling",
+                            fr: ""
+                        },
+                    ]
+                }
+            ],
+            [
+                {
+                    type: 'header',
+                    left: {
+                        en: "Data analysis",
+                        fr: ""
+                    },
+                },
+                {
+                    type: 'list',
+                    items: [
+                        {
+                            en: "Advanced Excel",
+                            fr: ""
+                        },
+                        {
+                            en: "Alteryx",
+                            fr: ""
+                        },
+                        {
+                            en: "Power BI",
+                            fr: ""
+                        },
+                        {
+                            en: "Custom charting (highcharts.js, D3.js)",
+                            fr: ""
+                        },
+                    ]
+                }
+            ],
+            [
+                {
+                    type: 'header',
+                    left: {
+                        en: "Miscellaneous",
+                        fr: "Logiciels"
+                    },
+                },
+                {
+                    type: 'list',
+                    items: [
+                        {
+                            en: "Object-oriented Programming",
+                            fr: "Git - Gitlab"
+                        },
+                        {
+                            en: "Environment: Anaconda, Jupyter, Git & Gitlab, VS Code, Docker",
+                            fr: "Git - Gitlab"
+                        },
+                        {
+                            en: "Bloomberg Terminal",
+                            fr: ""
+                        },
+                    ]
+                }
+            ],
+        ]
+    },
+    {
         section_type: 'box-section',
         section_name: {
             en: "MAIN PROJECTS",
@@ -393,159 +566,6 @@ const resume = [
                 }
             }],
         ],
-    },
-    {
-        section_type: 'box-column-section',
-        section_name: {
-            en: "HARD SKILLS",
-            fr: "COMPÉTENCES TECHNIQUES",
-        },
-        section_content: [
-            [
-                {
-                    type: 'header',
-                    left: {
-                        en: "Programming languages",
-                        fr: "Langages de programmation"
-                    },
-                },
-                {
-                    type: 'list',
-                    items: [
-                        {
-                            en: "Javascript, HTML, CSS",
-                            fr: "Javascript, HTML, CSS"
-                        },
-                        {
-                            en: "Python",
-                            fr: "Python"
-                        },
-                        {
-                            en: "VBA",
-                            fr: "VBA"
-                        },
-                        {
-                            en: "SQL",
-                            fr: "SQL"
-                        },
-                        {
-                            en: "Batch/Powershell",
-                            fr: "Batch/Powershell"
-                        },
-                    ]
-                }
-            ],
-            [
-                {
-                    type: 'header',
-                    left: {
-                        en: "Main frameworks",
-                        fr: "Frameworks et modules"
-                    },
-                },
-                {
-                    type: 'list',
-                    items: [
-                        {
-                            en: `Python
-                            <div class="box-list">
-                            <ul>
-                            <li style="text-align: left;">Backend: Django, Flask</li>
-                            <li style="text-align: left;">Data: regex, pandas, Jupyter</li>
-                            <li style="text-align: left;">Machine Learning: pytesseract, TensorFlow</li>
-                            <li style="text-align: left;">Webscraping: requests, selenium</li>
-                            </ul>
-                            </div>`,
-                            fr: `Python
-                            <div class="box-list">
-                            <ul>
-                            <li>Backend : Django, Flask</li>
-                            <li>Data : regex, pandas, Jupyter</li>
-                            <li>IA : pytesseract, TensorFlow</li>
-                            <li>Webscraping: requests, selenium</li>
-                            </ul>
-                            </div>`
-                        },
-                        {
-                            en: "NodeJS, Typescript, React & NextJS",
-                            fr: "NodeJS, Typescript, React et NextJS"
-                        },
-                    ]
-                },
-            ],
-            [
-                {
-                    type: 'header',
-                    left: {
-                        en: "Softwares",
-                        fr: "Logiciels"
-                    },
-                },
-                {
-                    type: 'list',
-                    items: [
-                        {
-                            en: "Git - Gitlab",
-                            fr: "Git - Gitlab"
-                        },
-                        {
-                            en: "Visual Studio Code",
-                            fr: "Visual Studio Code"
-                        },
-                        {
-                            en: "MS Office",
-                            fr: "MS Office"
-                        },
-                        {
-                            en: "PowerBI, Alteryx",
-                            fr: "PowerBI, Alteryx"
-                        },
-                        {
-                            en: "MongoDB, SQL Server, PostgreSQL",
-                            fr: "MongoDB, SQL Server, PostgreSQL"
-                        },
-                        {
-                            en: "Bloomberg",
-                            fr: "Bloomberg"
-                        },
-                    ]
-                }
-            ],
-            [
-                {
-                    type: 'header',
-                    left: {
-                        en: "Competencies",
-                        fr: "Compétences"
-                    },
-                },
-                {
-                    type: 'list',
-                    items: [
-                        {
-                            en: "REST APIs",
-                            fr: "Création d'API REST"
-                        },
-                        {
-                            en: "Data Analysis",
-                            fr: "Analyse de données"
-                        },
-                        {
-                            en: "Web-scraping",
-                            fr: "Web-scraping"
-                        },
-                        {
-                            en: "SQL/NoSQL",
-                            fr: "SQL/NoSQL"
-                        },
-                        {
-                            en: "Financial modeling",
-                            fr: "Modélisation financière"
-                        },
-                    ]
-                }
-            ],
-        ]
     },
     {
         section_type: 'box-column-section',
