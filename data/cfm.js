@@ -63,7 +63,7 @@ const resume = [
                             fr: ""
                         },
                         {
-                            en: "Audited IT infrastructures across 5 themes (central database, network file management, version control, dev environments); implemented recommendations and reported regularly to colleagues",
+                            en: "Audited IT infrastructures across 5 themes (central database, network file management, version control, dev environments); implemented recommendations and ensured follow-up",
                             fr: ""
                         },
                         {
@@ -232,7 +232,7 @@ const resume = [
                 {
                     type: 'header',
                     left: {
-                        en: "Master in Management (Programme Grande École)",
+                        en: "<li>Master in Management (Programme Grande École)</li>",
                         fr: "Programme Grande École"
                     },
                     right: {
@@ -256,7 +256,7 @@ const resume = [
                 {
                     type: 'header',
                     left: {
-                        en: "MS in Wealth Management",
+                        en: "<li>MS in Wealth Management</li>",
                         fr: "MS Gestion de Patrimoine"
                     },
                     right: {
@@ -276,7 +276,7 @@ const resume = [
                 {
                     type: 'header',
                     left: {
-                        en: "5-month Exchange Semester in Brazil",
+                        en: "<li>5-month Exchange Semester in Brazil</li>",
                         fr: "Échange universitaire de 5 mois au Brésil"
                     },
                     right: {
@@ -300,7 +300,7 @@ const resume = [
                 {
                     type: 'header',
                     left: {
-                        en: "Two-year undergraduate intensive preparation for the entrance exams to top French Business schools, CPGE ECE",
+                        en: "Classes Préparatoires aux Grandes Écoles de commerce (CPGE ECE)",
                         fr: "Classes Préparatoires aux Grandes Écoles de commerce"
                     },
                     right: {
