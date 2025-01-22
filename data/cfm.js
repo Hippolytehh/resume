@@ -6,8 +6,8 @@ const resume = [
                 name: "Hippolyte LEPRELLE",
                 details: `<a href="mailto:hippolyte.leprelle@gmail.com">hippolyte.leprelle@gmail.com</a> - +33 7 67 50 64 16 - <a href="https://www.linkedin.com/in/hippolyte-leprelle/" target="_blank">linkedin</a>`,
                 summary: {
-                    fr: "Développeur fullstack",
-                    en: "Developer in finance",
+                    fr: "",
+                    en: "",
                 },
             }
         ],
@@ -59,7 +59,7 @@ const resume = [
                     type: 'list',
                     items: [
                         {
-                            en: "Designed a PostgreSQL database based on accounting rules: transaction management, join queries, triggers, stored procedures, views, and audit trail with access management",
+                            en: "Designed a PostgreSQL database based on accounting rules: transaction management, jointures, triggers, stored procedures, views, and audit trail",
                             fr: ""
                         },
                         {
@@ -121,7 +121,7 @@ const resume = [
                             fr: ""
                         },
                         {
-                            en: "Designed a fully functional support ticket management mockup in React with NextJS and MongoDB in under 3 weeks for presentation to top management",
+                            en: "Designed a fully functional support ticket management mockup in React with NextJS and MongoDB in under 3 weeks",
                             fr: ""
                         },
                         {
@@ -159,7 +159,7 @@ const resume = [
                             fr: "Automatisation de la lecture d'environ 10 000 documents PDF afin d'alimenter une base de données à l'aide de modules de reconnaissance de texte et d'images"
                         },
                         {
-                            en: "Maintained and enhanced a tool to automate portfolio reporting using Python and VBA",
+                            en: "Maintained and enhanced a portfolio reporting tool using Python and VBA",
                             fr: "Maintenance et amélioration d'outils automatisés avec Python et VBA"
                         }
                     ]
@@ -193,7 +193,7 @@ const resume = [
                     type: 'list',
                     items: [
                         {
-                            en: "Prepared a paper for weekly client meetings gathering analyses and briefs over recent news from US and EU listed companies (results, governance and publications)",
+                            en: "Prepared a paper for weekly client meetings gathering analyses and briefs over recent news from US and EU listed companies",
                             fr: ""
                         },
                         {
