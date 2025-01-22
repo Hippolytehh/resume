@@ -460,7 +460,7 @@ const resume = [
                     type: 'list',
                     items: [
                         {
-                            en: "Object-oriented Programming",
+                            en: "Object-Oriented Programming",
                             fr: "Git - Gitlab"
                         },
                         {
@@ -487,11 +487,11 @@ const resume = [
                 {
                     type: 'header',
                     left: {
-                        en: `<span style="background: yellow">PROJET DATA VIS</span>`,
+                        en: `Portfolio Allocation Backtesting Simulator`,
                         fr: "",
                     },
                     right: {
-                        en: `<span style="background: yellow">Languages: </span>`,
+                        en: `Languages: Python (backend & data analysis), Javascript (frontend)`,
                         fr: "",
                         special: 'italic'
                     }
@@ -544,7 +544,7 @@ const resume = [
                     fr: "Lecteur de PDF automatisé",
                 },
                 right: {
-                    en: "Language: Python (pandas, pdfplumber, pytesseract, tensorFlow)",
+                    en: "Language: Python (pandas, pdfplumber, pytesseract, TensorFlow)",
                     fr: "",
                     special: 'italic'
                 }
