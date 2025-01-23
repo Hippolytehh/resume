@@ -71,7 +71,7 @@ const resume = [
                             fr: ""
                         },
                         {
-                            en: "Developed a Python project to verify customer data with government APIs using fuzzy matching (Levenshtein) and apply a margin",
+                            en: "Developed a Python project to verify customer data with government APIs using fuzzy matching (Levenshtein)",
                             fr: ""
                         },
                         {
@@ -109,7 +109,7 @@ const resume = [
                     type: 'list',
                     items: [
                         {
-                            en: "Developed customer portfolio analysis tools for the front office, including cross-asset performance calculations, backtesting, simulation, and decision-support tools for portfolio management and book monitoring to align with CIO recommendations",
+                            en: "Developed customer portfolio analysis tools for the front office, including cross-asset performance calculations, backtesting, simulation, and decision-support tools for portfolio monitoring to align with CIO",
                             fr: ""
                         },
                         {
@@ -117,15 +117,15 @@ const resume = [
                             fr: ""
                         },
                         {
-                            en: "Set up UAC test campaigns for 10+ departments; collected data and feedback from teams; produced improvement and correction specs",
+                            en: "Set up UAC test campaigns for 10+ departments; collected data and feedback from teams; provided specs and improvements",
                             fr: ""
                         },
                         {
-                            en: "Designed a fully functional support ticket management mockup in React with NextJS and MongoDB in under 3 weeks",
+                            en: "Developed a fully functional support ticket management mockup in React with NextJS and MongoDB in under 3 weeks",
                             fr: ""
                         },
                         {
-                            en: "Managed the migration of 2 static applications to full-stack, building the backend with Django and NodeJS, and the database with SQL Server and the API",
+                            en: "Managed the migration of 2 static applications to full-stack, building the backend with Django and NodeJS, and the SQL Server database with the API",
                             fr: ""
                         }
                     ]
@@ -326,11 +326,11 @@ const resume = [
                     type: 'list',
                     items: [
                         {
-                            en: "Data: pandas, regex, numpy, requests, selenium",
+                            en: "Data: pandas, regex, numpy, selenium, pytesseract",
                             fr: "Python"
                         },
                         {
-                            en: "ML: pytesseract, TensorFlow",
+                            en: "Web: Flask, Django, requests",
                             fr: "Python"
                         },
                     ]
