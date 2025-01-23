@@ -147,11 +147,11 @@ const resume = [
                     type: 'list',
                     items: [
                         {
-                            en: "Collaborated with bankers and product specialists to create customized investment proposals for UHNW clients (±30M€)",
+                            en: "Created cross-asset investment proposals for UHNW clients (±30M€) with stocks, bonds, funds, structured products, and alternatives",
                             fr: "Travail avec les banquiers, les gérants et spécialistes pour créer des propositions d'investissement pour des clients UHNW (±30M€ de patrimoine)"
                         },
                         {
-                            en: "Created ±5 reports per month, including updates and detailed portfolio performance calculations",
+                            en: "Produced ±5 reports per month, including updates and detailed portfolio performance calculations",
                             fr: "Édition d'en moyenne 5 reportings par mois récapitulant les mouvements et des calculs détaillés de la performance"
                         },
                         {
@@ -193,7 +193,7 @@ const resume = [
                     type: 'list',
                     items: [
                         {
-                            en: "Prepared a paper for weekly client meetings gathering analyses and briefs over recent news from US and EU listed companies",
+                            en: "Prepared a paper for weekly client meetings gathering analyses and briefs over recent news mostly from S&P500 & STOXX600",
                             fr: ""
                         },
                         {
@@ -244,7 +244,7 @@ const resume = [
                     type: 'list',
                     items: [
                         {
-                            en: "Electives in financial markets",
+                            en: "Electives in finance: Derivatives, Fixed Income, Machine-Learning, Portfolio Management, Valuation",
                             fr: "Cours électifs en finance : Produits dérivés, Fixed Income, Machine-Learning, Gestion de Portefeuille, Finance de marché"
                         },
                     ]
