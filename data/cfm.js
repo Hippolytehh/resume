@@ -59,15 +59,15 @@ const resume = [
                     type: 'list',
                     items: [
                         {
+                            en: "Worked for the Operations team including NAV and portfolio reconciliation, processing reports and researchs on Bloomberg Terminal",
+                            fr: ""
+                        },
+                        {
+                            en: "Created a tool to automate daily reconciliation of the fund’s portfolio and NAV",
+                            fr: ""
+                        },
+                        {
                             en: "Designed a PostgreSQL database based on accounting rules: transaction management, jointures, triggers, stored procedures, views, and audit trail",
-                            fr: ""
-                        },
-                        {
-                            en: "Audited IT infrastructures across 5 themes (central database, network file management, version control, dev environments); implemented recommendations and ensured follow-up",
-                            fr: ""
-                        },
-                        {
-                            en: "Created a tool to automate daily reconciliation of the fund’s trading and accounting data with counterparties",
                             fr: ""
                         },
                         {
@@ -75,9 +75,9 @@ const resume = [
                             fr: ""
                         },
                         {
-                            en: "Integrated market data into databases and risk simulations (VaR) with Bloomberg Desktop API",
+                            en: "Audited IT infrastructures across 5 themes (central database, network file management, version control, dev environments); implemented recommendations and ensured follow-up",
                             fr: ""
-                        }
+                        },
                     ]
 
                 }
